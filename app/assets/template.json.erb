@@ -1,0 +1,16 @@
+<%- size = @errors.size %>
+{
+  "errors":[
+    <%- @errors.each_with_index do |error, index| %>
+    {
+      "type": "<%= error.type %>",
+      "short_filename": "<%= error.short_filename %>",
+      "line_number": "<%= error.line_number %>",
+      "message": "<%= error.message %>",
+      "url": "<%= error.url %>",
+      "git_commit": "<%= error.git_commit %>",
+      "git_username": "<%= error.git_username %>"
+    }<%= "," unless index == size - 1 %>
+    <%- end %>
+  ]
+}
