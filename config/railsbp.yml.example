@@ -1,0 +1,11 @@
+production:
+  token: "1234567890"
+  branch: "master"
+  build_path: "/home/huangzhi/src/railsbp-proxy"
+  github_name: "railsbp/rails-bestpractices.com"
+
+test:
+  token: "1234567890"
+  branch: "master"
+  build_path: "/home/huangzhi/src/railsbp-proxy"
+  github_name: "railsbp/rails-bestpractices.com"
