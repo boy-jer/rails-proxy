@@ -1,3 +1,6 @@
+require 'net/http'
+require 'net/https'
+
 class ProxyController < ApplicationController
   def hook
     begin
